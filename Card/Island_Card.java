@@ -45,11 +45,14 @@ private int soil = 0;
 			return victPoint;
 		}
 		public int getEarth() {
-		return Earth;
+		return drawEarth;
 		}
 	
 		public int getSoil(){
 		return soil;
+		}
+		public int getComp(){
+		return compCard 
 		}
 		
 		
