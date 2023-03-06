@@ -45,6 +45,10 @@ private int soil = 0;
 			return victPoint;
 		}
 		public int getEarth() {
+		return Earth;
+		}
+	
+		public int getSoil(){
 		return soil;
 		}
 		
