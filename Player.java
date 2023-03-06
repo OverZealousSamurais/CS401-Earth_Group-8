@@ -1,18 +1,40 @@
+package crm;
+
+import java.util.ArrayList;
+
+import java.util.List;
+
 public class Player {
-    protected String name;
+    private String name;
     private Integer dirt;
     private Integer smallGrowthToken;
     private Integer largeGrowthToken;
     private Integer vp;
 
+    private List<Island_Card> hand;
 
-    public void setName(String Name){
-        this.name = Name;
+    public Player(String name) {
+        this.name = name;
+        hand = new ArrayList<Island_Card>();
     }
 
-    public void addDirt(Integer Dirt){
-        this.dirt = Dirt + this.dirt;
+    public void drawCard(Island_Card card) {
+        hand.add(card);
     }
+
+    public Island_Card playCard(int index) {
+        return hand.remove(index);
+    }
+
+    public List<Island_Card> getHand() {
+        return hand;
+    }
+
+    public int getHandSize() {
+        return hand.size();
+    }
+
+    public void addDirt(Integer Dirt){this.dirt = Dirt + this.dirt;}
 
     public void addSmallGrowthToken(Integer SGT){
         this.smallGrowthToken = SGT + this.smallGrowthToken;
