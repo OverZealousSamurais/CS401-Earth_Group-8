@@ -7,17 +7,19 @@ public class Island_Card {
 
 		
 private String cardName;
+private String category;
 private int victPoint = 0;
 private int drawEarth = 0;
 private int compCard = 0;
 private int soil = 0;
 
-		public Island_Card(String cardName, int victPoint,int drawEarth,int compCard,int soil ) {
+		public Island_Card(String cardName,String category, int victPoint,int drawEarth,int compCard) {
 			this.cardName = cardName;
 			this.victPoint = victPoint;
 			this.drawEarth= drawEarth;
 			this.compCard = compCard;
-			this.soil= soil;
+			this.category = category;
+			//this.soil= soil;
 			
 			
 		}
@@ -25,6 +27,10 @@ private int soil = 0;
 		public void setName(String cardName) {
 			this.cardName = cardName;
 		}
+		public void setCategory(String category) {
+			this.category = category;
+		}
+		
 		public void setVict(int victPoint) {
 			this.victPoint = victPoint;
 		}
@@ -34,6 +40,7 @@ private int soil = 0;
 		public void setComp(int compCard) {
 			this.compCard = compCard;
 		}
+		
 		public void setsoil(int soil) {
 			this.soil = soil;
 		}
@@ -45,16 +52,17 @@ private int soil = 0;
 			return victPoint;
 		}
 		public int getEarth() {
-		return drawEarth;
+			return drawEarth;
 		}
-	
-		public int getSoil(){
-		return soil;
-		}
-		public int getComp(){
-		return compCard 
+		public int getComp() {
+			return compCard;
 		}
 		
+		public int getSoil() {
+			return soil;
+		}
 		
 }
+
+
 
