@@ -80,17 +80,32 @@ class PlayerTest {
 /* TODO test dirt/tokens when all cards have been fully implemented*/
 	@Test
 	void testAddDirt() {
-		fail("Not yet implemented");
+         Player player = new Player("Test Player");
+        player.addDirt(5);
+        assertEquals(5, player.getDirt());
+        player.addDirt(3);
+        assertEquals(8, player.getDirt());
+	//fail("Not yet implemented");
 	}
 
 	@Test
 	void testAddSmallGrowthToken() {
-		fail("Not yet implemented");
+	Player player = new Player("yoff");
+        player.addSmallGrowthToken(2);
+        assertEquals(2, player.getSmallGrowthToken());
+        player.addSmallGrowthToken(1);
+        assertEquals(3, player.getSmallGrowthToken());
+		//fail("Not yet implemented");
 	}
 
 	@Test
 	void testAddLargeGrowthToken() {
-		fail("Not yet implemented");
+	Player player = new Player("geoff");
+        player.addLargeGrowthToken(3);
+        assertEquals(3, player.getLargeGrowthToken());
+        player.addLargeGrowthToken(2);
+        assertEquals(5, player.getLargeGrowthToken());
+		//fail("Not yet implemented");
 	}
 
 	@Test
