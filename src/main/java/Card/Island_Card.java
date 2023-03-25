@@ -1,10 +1,8 @@
-import java.awt.*;
-import java.util.*;
-import java.util.List;
-import java.util.HashMap;
+package Card;
 
 public class Island_Card {
 
+		
 private String cardName;
 private int victPoint = 0;
 private int drawEarth = 0;
@@ -44,17 +42,15 @@ private int soil = 0;
 			return victPoint;
 		}
 		public int getEarth() {
-			return drawEarth;
+		return drawEarth;
 		}
-		public int getComp() {
-			return compCard;
+	
+		public int getSoil(){
+		return soil;
 		}
-		public int getSoil() {
-			return soil;
+		public int getComp(){
+		return compCard;
 		}
-		
-		
-		
 		
 		
 }

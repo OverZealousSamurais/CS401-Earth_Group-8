@@ -1,11 +1,12 @@
-package org.example;
+package Card;
+import java.sql.*;
+
 public abstract class Card {
     private String name;
     public int soilCost;
     private String soil;
 
-
-    public Card(String name, int soilCost) {
+    public Card(String name, int soilCost) throws SQLException {
         this.name = name;
         this.soilCost = soilCost;
     }

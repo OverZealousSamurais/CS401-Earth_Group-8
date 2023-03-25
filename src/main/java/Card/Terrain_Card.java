@@ -1,7 +1,4 @@
-import java.awt.*;
-import java.util.*;
-import java.util.List;
-import java.util.HashMap;
+package Card;
 
 public class Terrain_Card {
 

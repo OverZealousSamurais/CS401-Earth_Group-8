@@ -1,5 +1,5 @@
-package crm;
-
+package Player;
+import Card.*;
 import java.util.ArrayList;
 
 import java.util.List;
@@ -19,6 +19,7 @@ public class Player {
         hand = new ArrayList<Island_Card>();
     }
 
+    //TODO shift from Island_card usage to generic cards
     public void drawCard(Island_Card card) {
         hand.add(card);
     }
