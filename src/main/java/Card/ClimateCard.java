@@ -1,4 +1,4 @@
-package org.example;
+package Card;
 
 public class ClimateCard {
     private String cardName;
