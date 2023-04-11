@@ -1,5 +1,6 @@
 package Player;
 import Card.*;
+import java.time.Instant;
 import java.util.ArrayList;
 
 import java.util.List;
@@ -11,29 +12,24 @@ public class Player {
     private Integer largeGrowthToken = 0;
     private Integer compost = 0;
     private Integer vp = 0;
-
-    private List<Island_Card> hand;
+    private Integer amtOfInstantCards = 0;
+    private boolean turnStatus = true;
+    private List<Instant_Card> hand;
 
     public Player(String name) {
         this.name = name;
-        hand = new ArrayList<Island_Card>();
+        hand = new ArrayList<Instant_Card>();
     }
 
-    //TODO shift from Island_card usage to generic cards
-    public void drawCard(Island_Card card) {
+    public void drawCard(Instant_Card card) {
+        if (card.getType() == "Instant"){
+            amtOfInstantCards += 1;
+        }
         hand.add(card);
     }
 
-    public Island_Card playCard(int index) {
+    public Instant_Card playCard(int index) {
         return hand.remove(index);
-    }
-
-    public List<Island_Card> getHand() {
-        return hand;
-    }
-
-    public int getHandSize() {
-        return hand.size();
     }
 
     public void addDirt(Integer Dirt){this.dirt = Dirt + this.dirt;}
@@ -53,9 +49,21 @@ public class Player {
         this.vp = vp + this.vp;
     }
 
+    public void setTurnStatus(Boolean status){
+        this.turnStatus = status;
+    }
+
     public int getDirt(){return dirt; }
     public int getSmallGrowthToken(){return smallGrowthToken; }
     public int getLargeGrowthToken(){return largeGrowthToken; }
     public int getCompost(){return compost; }
     public int getVP(){return vp; }
+    public int getAmtOfInstantCards(){return amtOfInstantCards;}
+    public boolean getTurnStatus() {return turnStatus;}
+
+    public List<Instant_Card> getHand() {return hand;}
+    public int getHandSize() {
+        return hand.size();
+    }
+
 }
