@@ -110,12 +110,16 @@ class PlayerTest {
 
 	@Test
 	void testAddCompost() {
-		fail("Not yet implemented");
+	Player player = new Player("TestPlayer");
+        player.addCompost(5);
+        assertEquals(5, player.getCompost());
 	}
 
 	@Test
 	void testAddVP() {
-		fail("Not yet implemented");
+	Player player = new Player("TestPlayer");
+        player.addVP(10);
+        assertEquals(10, player.getCompost());
 	}
 
 	@Test
