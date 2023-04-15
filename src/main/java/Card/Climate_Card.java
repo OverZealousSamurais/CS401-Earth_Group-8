@@ -1,6 +1,6 @@
 package Card;
 
-public class ClimateCard {
+public class Climate_Card {
     private String cardName;
     private String habitats;
     private String frontSide;
@@ -12,35 +12,35 @@ public class ClimateCard {
     public int getDrawCards(int iconNumber) {
         return iconNumber;
     }
-    public ClimateCard(int victoryPoint, String habitats, String frontSide, String backSide) {
+    public Climate_Card(int victoryPoint, String habitats, String frontSide, String backSide) {
         this.victoryPoint = victoryPoint;
         this.habitats = habitats;
         this.frontSide= frontSide;
         this.backSide = backSide;
-        this.isFrontSideChosen = true; // by default, front side is chosen
+        isFrontSideChosen = true; // by default, front side is chosen
     }
 
-    public static int getVictoryPoint() {
+    public int getVictoryPoint() {
         return this.victoryPoint;
     }
-    public static String getAbility() {
+    public String getAbility() {
         if (isFrontSideChosen) {
             return this.frontSide;
         } else {
             return this.frontSide;
         }
     }
-    public static String getHabitats() {
+    public String getHabitats() {
         return this.habitats;
     }
 
 
     public static void setBackSide() {
-        this.isFrontSideChosen = false;
+        isFrontSideChosen = false;
     }
 
     public static boolean isFrontSideChosen() {
-        return this.isFrontSideChosen;
+        return isFrontSideChosen;
     }
 
     public void setFrontSide() {

@@ -1,8 +1,0 @@
-Island Cards list
-
-
-Kauai, Wet, 0, draw+12, Compost+5,  Soil+6, Green:+1 Card Per Terrain Planted This Turn
-Nishinoshima, Sunny|Rocky, 0, draw+11 Compost+3, soil+6 Green:Sunny Cards -1 Cost (Floor at 1)
-Deception,Rocky|Cold,1, draw+10,Compost +4, Soil+6 Green:Cold Cards -1 Soil Cost (floor at 1)
-Barren,Wet|Rocky,1,draw+10 compost+2, Soil+6 Red:+3 Compost if you choose the red action 
-Hawai'i,Rocky|Cold,4,draw+5 Compost+2, Soil+7 Green:+2 Sprouts per Rocky Card Planted this turn

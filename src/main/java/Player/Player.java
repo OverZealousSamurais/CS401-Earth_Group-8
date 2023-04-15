@@ -1,12 +1,16 @@
 package Player;
-import Card.*;
-import java.time.Instant;
-import java.util.ArrayList;
 
+import Board.Player_Board;
+import Board.Tableau;
+import Card.Instant_Card;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Player {
     private String name;
+    private Player_Board board;
+    private Tableau tableau;
     private Integer dirt = 0;
     private Integer smallGrowthToken = 0;
     private Integer largeGrowthToken = 0;
