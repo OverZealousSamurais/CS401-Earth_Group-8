@@ -70,4 +70,11 @@ public class Player {
         return hand.size();
     }
 
+    public Tableau getTableau() {
+        return tableau;
+    }
+
+    public Player_Board getBoard() {
+        return board;
+    }
 }

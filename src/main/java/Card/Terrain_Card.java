@@ -1,21 +1,23 @@
 package Card;
 
+import java.util.ArrayList;
+
 public class Terrain_Card {
 
 	private String cardName;
+	private ArrayList<String> habitats;
 	private int victPoint = 0;
 	private int drawEarth = 0;
 	private int compCard = 0;
 	private int soil = 0;
 
-			public Terrain_Card(String cardName, int victPoint,int drawEarth,int compCard,int soil ) {
+			public Terrain_Card(String cardName, ArrayList<String> habitats, int victPoint,int drawEarth,int compCard,int soil ) {
 				this.cardName = cardName;
+				this.habitats = habitats;
 				this.victPoint = victPoint;
 				this.drawEarth= drawEarth;
 				this.compCard = compCard;
 				this.soil= soil;
-				
-				
 			}
 			
 			public void setName(String cardName) {
@@ -37,7 +39,12 @@ public class Terrain_Card {
 			public String getName() {
 				return cardName;
 			}
-			public int getVict() {
+
+	public ArrayList<String> getHabitats() {
+		return habitats;
+	}
+
+	public int getVict() {
 				return victPoint;
 			}
 			public int getEarth() {
