@@ -141,5 +141,5 @@ INSERT INTO `cards` (plant_cost, victory_points, card_type, habitat_elements, ca
     (4, 5, 'Mushroom', '', 'Indian Oyster', 'Pleurotus pulmonarius', 0, 0, 0, 3, 'black', 'You may pay all/some of this Flora\'s cost with Compost instead of Soil (1 Compost = 1 Soil)', '', '', 0),
     (3, 1, 'Tree', '', 'English Walnut', 'Juglans regia', 0, 4, 6, 5, 'black', 'You may pay all/some of this Flora\'s cost with Sprout instead of Soil (1 Sprout = 1 Soil)', '', '', 0),
     (4, 4, 'Tree', 'Rocky,Cold', 'American Beech', 'Fagus grandifolia', 0, 2, 3, 2, 'black', 'You may pay all/some of this Flora\'s cost with Compost instead of Soil (1 Compost = 1 Soil)', '', '', 0),
-    (1, 3, 'Tree', 'Sunny', 'Giant Bearded Fig', 'Ficus citrifolia', 0, 3, 5, 4, 'black', 'You may pay all/some of this Flora\'s cost with Growth instead of Soil (1 Growth = 1 Soil)', '', '', 0)
+    (1, 3, 'Tree', 'Sunny', 'Giant Bearded Fig', 'Ficus citrifolia', 0, 3, 5, 4, 'black', 'You may pay all/some of this Flora\'s cost with Growth instead of Soil (1 Growth = 1 Soil)', '', '', 0),
     ;
