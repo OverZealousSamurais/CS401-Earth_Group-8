@@ -1,17 +1,25 @@
 package Card;
 
+import Action.Ability;
+
+import java.util.ArrayList;
+
 public class Island_Card {
 
 		
 private String cardName;
 private String category;
+private Ability ability;
+private final ArrayList<String> habitats;
 private int victPoint = 0;
 private int drawEarth = 0;
 private int compCard = 0;
 private int soil = 0;
 
-		public Island_Card(String cardName,String category, int victPoint,int drawEarth,int compCard) {
+		public Island_Card(String cardName, Ability ability, ArrayList<String> habitats, String category, int victPoint,int drawEarth,int compCard) {
 			this.cardName = cardName;
+			this.ability = ability;
+			this.habitats = habitats;
 			this.victPoint = victPoint;
 			this.drawEarth= drawEarth;
 			this.compCard = compCard;
@@ -24,6 +32,7 @@ private int soil = 0;
 		public void setName(String cardName) {
 			this.cardName = cardName;
 		}
+
 		public void setCategory(String category) {
 			this.category = category;
 		}
@@ -45,7 +54,16 @@ private int soil = 0;
 		public String getName() {
 			return cardName;
 		}
-		public int getVict() {
+
+	public Ability getAbility() {
+			return ability;
+	}
+
+	public ArrayList<String> getHabitats() {
+		return habitats;
+	}
+
+	public int getVict() {
 			return victPoint;
 		}
 		public int getEarth() {

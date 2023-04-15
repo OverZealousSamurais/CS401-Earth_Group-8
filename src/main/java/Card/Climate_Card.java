@@ -1,8 +1,11 @@
 package Card;
 
-public class Climate_Card {
+import Action.Ability;
+
+public class Climate_Card extends Ability {
     private String cardName;
     private String habitats;
+    private Ability ability;
     private String frontSide;
     private String backSide;
     private int victoryPoint;
@@ -23,13 +26,19 @@ public class Climate_Card {
     public int getVictoryPoint() {
         return this.victoryPoint;
     }
-    public String getAbility() {
-        if (isFrontSideChosen) {
-            return this.frontSide;
-        } else {
-            return this.frontSide;
-        }
+//    public String getAbility() {
+//        if (isFrontSideChosen) {
+//            return this.frontSide;
+//        } else {
+//            return this.frontSide;
+//        }
+//    }
+
+
+    public Ability getAbility() {
+        return ability;
     }
+
     public String getHabitats() {
         return this.habitats;
     }
@@ -57,5 +66,10 @@ public class Climate_Card {
         String[] parts = backSide.split(" ");
         int value = Integer.parseInt(parts[0]);
         return value;
+    }
+
+    @Override
+    public void ability(Object obj1, Object obj2, int num, String action) {
+        //TODO switch statement for interactions
     }
 }
