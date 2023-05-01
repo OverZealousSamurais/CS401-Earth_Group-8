@@ -17,7 +17,7 @@ public class Player {
     private Integer compost = 0;
     private Integer vp = 0;
     private Integer amtOfInstantCards = 0;
-    private boolean turnStatus = true;
+    private boolean turnStatus = false;
     private List<Instant_Card> hand;
 
     public Player(String name) {
@@ -55,6 +55,10 @@ public class Player {
 
     public void setTurnStatus(Boolean status){
         this.turnStatus = status;
+    }
+
+    public void setBoard(Player_Board player_board){
+        this.board = player_board;
     }
 
     public int getDirt(){return dirt; }
