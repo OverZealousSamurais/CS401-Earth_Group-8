@@ -5,6 +5,8 @@ import Database.MySqlAccess;
 
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Scanner;
 
 class Driver {
@@ -163,6 +165,32 @@ class Driver {
         }
     }
 
+    private static Player loadPlayers(numOfPlayers){
+        for (int i = 0; i < numOfPlayers; i++) {
+            System.out.println("What is your username?");
+            Scanner sc = new Scanner(System.in);
+            String username = sc.nextLine();
+            Player player = new Player(username);
+
+            Queue<Player> queue = new LinkedList<>();
+            queue.add(player);
+
+        return queue;
+    }
+
+    private static Player_Board player_board(Player player){
+        // Pull from the stacks of Island Cards, Ecosystem Cards, and Climate Cards (In that order)
+        // Input them below this
+        Player_Board player_board = new Player_Board(, , ,);
+
+        //This sets the PLayer Board for each player
+        player.setBoard(player_board);
+    }
+
+    public static Boolean changeTurnStatus(Player currPlayer, Player nextPlayer){
+        currPlayer.setTurnStatus(false);
+        nextPlayer.setTurnStatus(true);
+    }
     private static void startGame() {
 
     }
